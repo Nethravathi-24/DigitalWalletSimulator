@@ -1,0 +1,17 @@
+## 🗄 Database Setup
+
+### 1️⃣ Create Database
+```sql
+CREATE DATABASE digital_wallet;
+USE digital_wallet;
+
+
+
+
+CREATE TABLE wallet (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    phone VARCHAR(15) UNIQUE NOT NULL,
+    balance DOUBLE DEFAULT 0
+);
+
